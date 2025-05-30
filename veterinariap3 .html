@@ -75,6 +75,7 @@ color: purple;
 <section id=inicio>
 <h2>Bienvenidos</h2>
 <p>Brindando servicio medico y cuidado integral para tus mascotas</p>
+<img src=https://i.pinimg.com/736x/3d/0f/5f/3d0f5fe6287a6788a13ed89a17f47b70.jpg alt=gatop3>
 </section>
 <section id=quienes-somos>
 <h2>quienes somos?</h2>
@@ -90,26 +91,26 @@ color: purple;
 </ul>
 </section>
 <section id=catalogo>
-<h2> catalogo de alimentos</h2>
-<div class=producto>
-<h3>Alimento premium para perros</h3>
-<p>rico en proteínas y de fácil digestión apto para perros mayores a tres meses de edad</p>
-</div>
-<div class= producto>
-<h3>Comida humeda para gatos</h3>
-<p> formula balanceada con sabor a res</p>
-</div>
-<div class= producto> 
-<h3> alimento dentqal para perros</h3>
-<p>control de higiene bucal</p>
+<h2>Alimentos</h2>
+<button onclick=producto>
+<h3>alimentos premium para perros</h3>
+<p>alimento rico en rpotwinas y sin colorantes artificiales.</P>
 </div>
 <div class=producto>
-<h3>croquetas para cachorros</h3>
-<p>Nutrición especifica para crecimiento saludable</p>
+<h3>snak dental para perros</h3>
+<p>ayuda a la higiene bucal y entretiene</p>
+</div>
+<div class=producto
+<h3>comida humeda para gatos</h3>
+<p>formula balanceada con sabor a carne de res</p>
 </div>
 <div class=producto>
-<h3>Comida para gatos recién esterilizados</h3>
-<p> bajo en grasas y alto en fibra</p>
+<h3>comida para cachorros</h3>
+<p> alta en proteinas y nutrientes especifics para cachorros en pleno desarrollo</p>
+</div>
+<h3>comida para gatos estirilizados</h3>
+<p>bajo en grasas y altas en fibra</p>
+</div>
 </div>
 </section>
 <section id=contacto>
@@ -146,6 +147,16 @@ return false;
 if (!mensaje) {
 error.textContent =Complete el siguiente campoP3;
 return false;
+}
+</script>
+<scrip>
+function toggleCatalogo(){
+const catalogo=document.getElementById(listaCatalogo);
+if (catalogo=document.style.display===none) {
+    catalogo.style.display=block;
+} else {
+catalogo.style.display=none;
+}
 }
 </script>
 </body>
